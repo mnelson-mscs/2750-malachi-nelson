@@ -1,0 +1,47 @@
+﻿<html><head><title>Exercise 1A</title></head><body>
+<p>Malachi Nelson<br />COMC2750 Exercise 1H</p>
+<p style="font-weight: 700">Description:</p>
+<p>Streaming Website: A streaming website that will keep track of two parties primarily-viewers and streamers. The website will keep track of user information such as followers and substriptions(both who an individual is following and and who is followed by that individual). Additionally, it will also keep track of veiws on vods, clips, etc.</p>
+<p style="font-weight: 700">Use Cases:</p>
+<p>As a user, I want to follow streamers so that I can get notifications</p>
+<p>As a streamer, I want to see views for vods, clips and total channels views</p>
+<p>As a user/streamer, I want to create sharable clips</p>
+<p>As a streamer, I want people to have the option to subscribe to be for added benefits</p>
+<p>As a streamer, I want subs to be giftable</p>
+<p>As a viewer, I want to browse streams by category</p>
+<p>As a streamer, I want to add emotes availible to subs</p>
+<p>As a streamer, I want to promote users to moderaters(access to basic commands/ban users)</p>
+<p style="font-weight: 700">&nbsp;</p>
+<p class="MsoNormal" style="MARGIN: 0in 0in 0pt"><b>Find Conceptual Classes:</b> Using the category list below (from Larman, p140-141) and the given use cases and database diagram,&nbsp;list the conceptual classes that fit each category.&nbsp;(The same class may be listed more than once.)&nbsp; Also list any classes below that don't fit any specific category.</p>
+<p>&nbsp;</p>
+<p><b>Business transactions:</b></p>
+<p>&nbsp;</p>
+<p><b>Transaction line items:</b></p>
+<p>&nbsp;</p>
+<p><b>Product or service related to a transaction:</b>&nbsp;</p>
+<p>&nbsp;</p>
+<p><b>Roles of people:</b></p>
+<p>User - userId : int, userName : String, email : String</p>
+<p>Mod - modId : int, userId : int, channelId : int</p>
+<p>Advertiser - adId : int, companyName : String</p>
+<p>Subscription - subId : int, channelId : int, userId : int</p>
+<p>Follow - followId : int, channelId : int, userId : int</p>
+<p>BannedUsers - banId : int, banDate : LocalDateTime, channelId : int, userId : int</p>
+<p><b>Place of transaction or service:</b></p>
+<p>&nbsp;</p>
+<p><b>Noteworthy events:</b>&nbsp;</p>
+<p>Vod - VodId : int, vodViews : int, dateCreated : LocalDateTime, categoryId : int, channelId : int, title : String</p>
+<p>Clip - clipId : int, clipViews : int, dateCreated : LocalDateTime, vodId : int</p>
+<p><b>Physical objects:</b></p>
+<p>Person - personId : int, firstName : String, lastName : String</p>
+<p>Channel - channelId : int, personId : int, channelViews : int, totalFollows : int, totalSubs : int</p>
+<p>Phone - description : String, phoneNumber : String, userId : int</p>
+<p><b>Descriptions of things:</b></p>
+<p>Category - categoryId : int, categoryName : String</p>
+<p><b>Catalogs:</b></p>
+<p>&nbsp;</p>
+<p><b>Containers of other things:</b></p>
+<p>&nbsp;</p>
+<p><b>Things in a container:</b></p>
+<p>&nbsp;</p>
+</body></html>
